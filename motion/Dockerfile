@@ -1,5 +1,5 @@
 
-FROM debian:jessie
+FROM arm64v8/debian
 #ARG BUILD_FROM
 #FROM $BUILD_FROM
 
