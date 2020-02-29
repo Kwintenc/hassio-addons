@@ -17,6 +17,7 @@ PICTUREOUTPUT=$(jq --raw-output ".picture_output" $CONFIG_PATH)
 PICTURENAME=$(jq --raw-output ".picture_name" $CONFIG_PATH)
 WEBCONTROLLOCAL=$(jq --raw-output ".webcontrol_local" $CONFIG_PATH)
 WEBCONTROLHTML=$(jq --raw-output ".webcontrol_html" $CONFIG_PATH)
+STREAMLOCAL=$(jq --raw-output ".stream_localhost" $CONFIG_PATH)
 
 
 echo "[Info] Show connected usb devices"
@@ -36,6 +37,7 @@ if [ ! -f "$CONFIG" ]; then
 	sed -i "s|%%PICTURENAME%%|$PICTURENAME|g" /etc/motion.conf
 	sed -i "s|%%WEBCONTROLLOCAL%%|$WEBCONTROLLOCAL|g" /etc/motion.conf
 	sed -i "s|%%WEBCONTROLHTML%%|$WEBCONTROLHTML|g" /etc/motion.conf
+	sed -i "s|%%STREAMLOCAL%%|$STREAMLOCAL|g" /etc/motion.conf
 	CONFIG=/etc/motion.conf
 fi
 # start server

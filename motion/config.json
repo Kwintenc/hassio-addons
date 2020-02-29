@@ -6,6 +6,7 @@
   "startup": "system",
   "boot": "auto",
   "ports": {
+  	"8080/tcp": 8080,
     "8081/tcp": 8081
    },
   "arch": [
@@ -33,7 +34,8 @@
   	"picture_output": "on",
   	"picture_name": "%v-%Y%m%d%H%M%S-%q",
   	"webcontrol_local": "on",
-  	"webcontrol_html": "on"
+  	"webcontrol_html": "on",
+  	"stream_localhost": "on"
   },
   "schema": {
 	"config": "str",
