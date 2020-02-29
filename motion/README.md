@@ -22,6 +22,13 @@ camera:
     file_path: /share/motion/lastsnap.jpg
 ```
 
+```
+camera:
+  - platform: mjpeg_url
+    name: Living Room Cam
+    mjpeg_url: http://localhost:8081/
+```
+
 ### Settings
 ##### config
 *Optional*
@@ -126,6 +133,18 @@ Set to 'preview' together with best-preview feature enables special naming conve
 You can put quotation marks around the text to allow leading spaces
 ```
 
+##### ffmpeg_output_movies
+*off*
+
+Use ffmpeg to encode movies in realtime (default: off)
+
+##### movie_filename
+*%v-%Y%m%d%H%M%S*
+
+File path for motion triggered ffmpeg films (movies) relative to target_dir
+Default: %v-%Y%m%d%H%M%S
+File extensions(.mpg .avi) are automatically added so do not include them
+
 ##### webcontrol_local
 *on*
 
@@ -135,3 +154,8 @@ Restrict control connections to localhost only
 *on*
 
 Output for http server, select off to choose raw text plain
+
+#### stream_localhost
+*on*
+
+Restrict stream connections to localhost only (default: on)

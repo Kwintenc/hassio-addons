@@ -33,6 +33,8 @@
   	"snapshot_name": "%v-%Y%m%d%H%M%S-snapshot",
   	"picture_output": "on",
   	"picture_name": "%v-%Y%m%d%H%M%S-%q",
+  	"ffmpeg_output_movies": "off",
+  	"movie_filename": "%v-%Y%m%d%H%M%S",
   	"webcontrol_local": "on",
   	"webcontrol_html": "on",
   	"stream_localhost": "on"
@@ -50,7 +52,10 @@
   	"snapshot_name": "str",
   	"picture_output": "str",
   	"picture_name": "str",
+  	"ffmpeg_output_movies": "str",
+  	"movie_filename": "str",
   	"webcontrol_local": "str",
-  	"webcontrol_html": "str"
+  	"webcontrol_html": "str",
+  	"stream_localhost": "str"
   }
 }
