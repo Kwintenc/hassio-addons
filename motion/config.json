@@ -19,7 +19,7 @@
   "map": [
     "share:rw"
   ],
-  "devices": ["/dev/video0:/dev/video0:rwm"],
+  "devices": ["/dev/video0","/dev/video0"],
   "options": {
 	"config": "",
   	"videodevice": "/dev/video0",
