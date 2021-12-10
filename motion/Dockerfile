@@ -2,7 +2,8 @@ FROM arm32v7/alpine
 #ARG BUILD_FROM
 #FROM $BUILD_FROM
 
-RUN apk update && apk add -q motion jq
+RUN echo "@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
+    apk update && apk add -q motion jq
 
 # Copy data
 COPY run.sh /
