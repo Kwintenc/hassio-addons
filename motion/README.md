@@ -11,6 +11,7 @@ Not all motion options are available from the supervisor but can be added if nee
 ### Changelog
 |Version|Changes|
 |-------|-------|
+|2.1.3  | Adapted for Alpine Linux base image for Home Assistant |
 |2.1.2  | Added Movie configuration |
 |2.1.1  | Added needed architectures |
 |2.1    | Added webcontrol configuration |
