@@ -1,4 +1,4 @@
-FROM arm64v7/alpine
+FROM arm32v7/alpine
 #ARG BUILD_FROM
 #FROM $BUILD_FROM
 
